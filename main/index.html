@@ -40,22 +40,35 @@
         align-items: center;
       }
       .frame_outside {
-        margin-top: 13rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10rem 27rem;
         border: solid 1px transparent;
-        padding: 3rem;
-        background-color: rgba(0, 0, 0, 0.2);
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.4);
       }
       .frame_inside {
+        justify-content: center;
+        align-items: center;
         border: solid 1px #233142;
-        padding: 1.5rem;
+        padding: 1.2rem;
       }
       .text {
-        display: flex;
-        color: white;
-        text-transform: uppercase;
-        font-family: "Source Serif Pro", serif;
+        display: block;
         border: solid 2px #233142;
-        padding: 3rem;
+        padding: 2rem;
+        color: white;
+        font-family: "Source Serif Pro", serif;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+      }
+      p {
+        font-size: 1rem;
       }
     </style>
   </head>
@@ -77,7 +90,15 @@
           <div class="frame_outside">
             <div class="frame_inside">
               <div class="text">
-                <h1>Bishkek city</h1>
+                <h1>Bishkek:</h1>
+                <h2>
+                  a Kyrgyzstan's capital city, full of post-Soviet anachronisms.
+                </h2>
+                <p>
+                  Visit to experience it's amazing culinary diversions, arts
+                  scene and nightlife, and feel the vibrancy of this gateway to
+                  the Tien Shan.
+                </p>
               </div>
             </div>
           </div>
