@@ -13,19 +13,6 @@
 
     <title>Visit Bishkek</title>
     <style>
-      h1 {
-        color: red;
-        font-family: "Source Serif Pro", serif;
-        font-size: 4rem;
-      }
-      img {
-       height: 85vh;
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero-small.jpg);
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
-    background-size: cover;
-    background-position: top;
-    position: relative;
-      }
       .navbar {
         display: flex;
         height: auto;
@@ -38,14 +25,41 @@
         color: white;
         font-family: "Source Serif Pro", serif;
       }
-      .textbox {
+
+      .header {
+        height: 93vh;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/290/original/mike-dudin-X0Et9fwIUbw-unsplash.jpg?1667463551);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+      }
+
+      .container {
         display: flex;
-        align-items: center;
         justify-content: center;
-        top: -10rem;
+        align-items: center;
+      }
+      .frame_outside {
+        margin-top: 13rem;
+        border: solid 1px transparent;
+        padding: 3rem;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .frame_inside {
+        border: solid 1px #233142;
+        padding: 1.5rem;
+      }
+      .text {
+        display: flex;
+        color: white;
+        text-transform: uppercase;
+        font-family: "Source Serif Pro", serif;
+        border: solid 2px #233142;
+        padding: 3rem;
       }
     </style>
   </head>
+
   <body>
     <main>
       <div class="navigation">
@@ -56,17 +70,19 @@
             <li>Visit</li>
           </ul>
         </nav>
-         </div>
-        <header class="header">
+      </div>
 
-       
-        <div class="textbox">
-          <div class="frame">
-            <h1>Bishkek city</h1>
+      <header class="header">
+        <div class="container">
+          <div class="frame_outside">
+            <div class="frame_inside">
+              <div class="text">
+                <h1>Bishkek city</h1>
+              </div>
+            </div>
           </div>
         </div>
-        </header>
-      </div>
+      </header>
     </main>
   </body>
 </html>
