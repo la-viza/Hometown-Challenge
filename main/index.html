@@ -19,9 +19,12 @@
         font-size: 4rem;
       }
       img {
-        display: inline-flex;
-        width: 100%;
-        height: auto;
+       height: 85vh;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero-small.jpg);
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
       }
       .navbar {
         display: flex;
@@ -45,7 +48,7 @@
   </head>
   <body>
     <main>
-      <div class="container">
+      <div class="navigation">
         <nav class="navbar">
           <ul>
             <li>History</li>
@@ -53,18 +56,16 @@
             <li>Visit</li>
           </ul>
         </nav>
-        <div class="main__image">
-          <img
-            class="bishkek__main__img"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/290/original/mike-dudin-X0Et9fwIUbw-unsplash.jpg?1667463551"
-            alt="Bishkek city view"
-          />
-        </div>
+         </div>
+        <header class="header">
+
+       
         <div class="textbox">
           <div class="frame">
             <h1>Bishkek city</h1>
           </div>
         </div>
+        </header>
       </div>
     </main>
   </body>
