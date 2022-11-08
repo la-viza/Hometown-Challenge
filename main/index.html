@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400;600&family=Raleway:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -38,21 +38,36 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
       }
       .frame_outside {
         display: flex;
         flex-wrap: wrap;
         margin: 8rem 27rem;
-        border: solid 1px transparent;
+        border: solid 2px transparent;
         padding: 2rem;
         background-color: rgba(0, 0, 0, 0.4);
       }
       .frame_inside {
         justify-content: center;
         align-items: center;
-        border: solid 1px #233142;
+        /*border: solid 1px #233142;*/
         padding: 1.2rem;
+        z-index: 10;
+        transition: all 0.2s ease-in-out;
+        outline-offset: 2rem;
+        cursor: pointer;
       }
+      .frame_inside:hover {
+        outline: 1rem solid #233142;
+        transform: scale(0.8) translateY(-0.2rem);
+        z-index: 20;
+      }
+
+      .frame_inside:not(:hover) {
+        transform: scale(0.98);
+      }
+
       .text {
         display: block;
         border: solid 2px #233142;
