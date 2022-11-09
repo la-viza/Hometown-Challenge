@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Oswald:wght@200;300;400;600&display=swap"
       rel="stylesheet"
     />
     <!-- Bootstrap CSS -->
@@ -28,30 +28,42 @@
     <!-- Custom CSS -->
 
     <style>
-      .navbar {
-        height: 3.5rem;
-        background-color: #222831 !important;
-      }
-
-      .nav-link {
+      #mainNavbar {
+        height: 3.2rem;
         display: inline-flex;
         color: white;
         opacity: 0.8;
         font-family: "Lato", sans-serif !important;
+        font-weight: 300;
+        font-size: 1.2rem;
         text-transform: uppercase;
         padding-left: 1.5rem !important;
       }
 
-      .nav-link:hover {
+      #mainNavbar .nav-link {
+        color: white;
+      }
+
+      #mainNavbar .nav-link:hover {
         color: white;
         opacity: 0.5;
       }
-      .collapse {
-        margin-left: -7.3rem;
+
+      #mainNavbar .navbar-brand {
+        color: white;
+        font-size: 1rem;
+        font-weight: 100;
+        margin-right: -5.5rem;
+      }
+
+      .navbar.scrolled {
+        background: #233142;
+        opacity: 0.9;
+        transition: background 500ms;
       }
 
       .header {
-        height: 93vh;
+        height: 100vh;
         background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/290/original/mike-dudin-X0Et9fwIUbw-unsplash.jpg?1667463551);
         background-size: cover;
         background-position: top;
@@ -66,15 +78,15 @@
       .frame_outside {
         display: flex;
         flex-wrap: wrap;
-        margin: 8rem 27rem;
+        margin: 12rem 20rem;
         border: solid 2px transparent;
-        padding: 1.7rem;
+        padding: 2rem;
         background-color: rgba(0, 0, 0, 0.4);
       }
       .frame_inside {
         justify-content: center;
         align-items: center;
-        padding: 1rem;
+        padding: 0.5rem;
         z-index: 10;
         transition: all 0.2s ease-in-out;
         outline-offset: 2rem;
@@ -82,7 +94,7 @@
       }
       .frame_inside:hover {
         outline: 0.5rem solid #233142;
-        transform: scale(1.2) translateY(-0.2rem);
+        transform: scale(1.1) translateY(-0.2rem);
         z-index: 20;
       }
 
@@ -93,7 +105,7 @@
       .text {
         display: block;
         border: solid 2px #233142;
-        padding: 2rem 2rem 1rem;
+        padding: 1rem;
         color: white;
       }
 
@@ -175,6 +187,12 @@
           </div>
         </div>
       </header>
+
+      <p>
+        shfjshfkjahfkghasgkhskghjsdhgjshjghsjghgfftdgfhgjghghfghVisit to
+        experience its' amazing culinary diversions, arts scene and nightlife,
+        and feel the vibrancy of this gateway to the Tien Shan.
+      </p>
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
