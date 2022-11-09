@@ -135,6 +135,69 @@
         text-align: center;
         margin-top: 1rem;
       }
+      .homes {
+        grid-column: center-start / center-end;
+        margin: 10rem -5rem;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 7.5rem;
+      }
+
+      .home {
+        background-color: grey;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 2.5rem;
+      }
+
+      .home__img {
+        width: 100%;
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        z-index: 1;
+      }
+      .home__name {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        justify-self: center;
+        align-self: end;
+        z-index: 3;
+        width: 80%;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 1.6rem;
+        padding: 1.25rem;
+        text-align: center;
+        background-color: black;
+        color: #fff;
+        font-weight: 400;
+        transform: translateY(50%);
+      }
+
+      .home__location,
+      .home__rooms {
+        margin-top: 1rem;
+      }
+
+      .home__location,
+      .home__rooms,
+      .home__area,
+      .home__price {
+        font-size: 1.5rem;
+        margin: 1rem;
+
+        display: flex;
+        align-items: center;
+      }
+      p {
+        justify-self: center;
+        align-self: center;
+      }
+
+      .home__btn {
+        grid-column: 1 / -1;
+      }
     </style>
   </head>
 
@@ -208,57 +271,73 @@
         </p>
       </section>
 
-
-<section class="homes">
-     
+      <section class="homes">
         <div class="home">
-        <img src="img/house-1.jpeg" alt="House 1" class="home__img" />
-        <svg class="home__like">
-          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
-        </svg>
-        <h5 class="home__name">Beautiful Family House</h5>
-        <div class="home__location">
-          <svg class="home__location">
-            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
-          </svg>
-          <p>USA</p>
-        </div>
-     </div>
+          <img src="#" alt="House 1" class="home__img" />
 
- <div class="home__rooms">
-          <svg class="home__location">
-            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
-          </svg>
-                  <p>5 rooms</p>
-        </div>
+          <h5 class="home__name">Beautiful Family House</h5>
+          <div class="home__location">
+            <p>USA</p>
+          </div>
 
+          <div class="home__rooms">
+            <p>5 rooms</p>
+          </div>
 
-         <div class="home__area">
-          <svg class="home__location">
-            <use xlink:href="img/sprite.svg#icon-expand"></use>
-          </svg>
-                  <p>325 m<sup>2</p>
+          <div class="home__area">
+            <p>325 m2</p>
+          </div>
+
+          <div class="home__price">
+            <p>$1,200,000</p>
+          </div>
+          <button class="btn home__btn">Contact realtor</button>
         </div>
 
+        <div class="home">
+          <img src="#" alt="House 1" class="home__img" />
 
-         <div class="home__price">
-          <svg class="home__location">
-            <use xlink:href="img/sprite.svg#icon-key"></use>
-          </svg>
-                  <p>$1,200,000</p>
+          <h5 class="home__name">Beautiful Family House</h5>
+          <div class="home__location">
+            <p>USA</p>
+          </div>
+
+          <div class="home__rooms">
+            <p>5 rooms</p>
+          </div>
+
+          <div class="home__area">
+            <p>325 m2</p>
+          </div>
+
+          <div class="home__price">
+            <p>$1,200,000</p>
+          </div>
+          <button class="btn home__btn">Contact realtor</button>
         </div>
-<button class="btn home__btn">Contact realtor</button>
 
-</section>
+        <div class="home">
+          <img src="#" alt="House 1" class="home__img" />
 
+          <h5 class="home__name">Beautiful Family House</h5>
+          <div class="home__location">
+            <p>USA</p>
+          </div>
 
+          <div class="home__rooms">
+            <p>5 rooms</p>
+          </div>
 
+          <div class="home__area">
+            <p>325 m2</p>
+          </div>
 
-
-
-
-
-
+          <div class="home__price">
+            <p>$1,200,000</p>
+          </div>
+          <button class="btn home__btn">Contact realtor</button>
+        </div>
+      </section>
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
