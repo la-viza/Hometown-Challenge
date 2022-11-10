@@ -66,7 +66,7 @@
       }
 
       .header {
-        height: 100vh;
+        height: 105vh;
         background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/290/original/mike-dudin-X0Et9fwIUbw-unsplash.jpg?1667463551);
         background-size: cover;
         background-position: top;
@@ -200,14 +200,49 @@
       .card {
         margin: 0 auto; /* Added */
         float: none; /* Added */
-        margin-bottom: 10px; /* Added */
+        border-color: none;
       }
       .book {
-        padding: 7rem;
-        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5rem;
+        background: linear-gradient(
+          -180deg,
+          rgba(255, 255, 255, 0.5) 0%,
+          rgba(0, 0, 0, 0.7) 100%
+        );
       }
 
       .card-img-top {
+        margin-top: 0;
+      }
+
+      .btn {
+        background-image: linear-gradient(
+          to right,
+          #232526 0%,
+          #414345 51%,
+          #232526 100%
+        );
+        margin: 10px;
+        padding: 0.8rem 1.5rem 0.8rem 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.3s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 15px;
+        width: 30%;
+        opacity: 0.8;
+      }
+
+      .btn:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      }
+
+      a {
+        color: white;
       }
     </style>
   </head>
@@ -340,10 +375,10 @@
         </div>
       </section>
 
-      <h3 class="text-center mt-0 mb-5">VISIT</h3>
+      <h3 class="text-center mt-0 mb-3">VISIT</h3>
 
-      <section class="book">
-        <div class="card mb-3" style="max-width: 80rem">
+      <section class="book container-md">
+        <div class="card mb-3 text-center" style="max-width: 80rem">
           <div class="row g-0">
             <div class="col-md-6">
               <img
@@ -355,13 +390,24 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/572/origina
             </div>
             <div class="col-md-6">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h3 class="card-title mt-3">BOOK YOUR TOUR NOW</h3>
+
+                <input
+                  type="email"
+                  class="form-control mt-5"
+                  id="exampleFormControlInput1"
+                  placeholder="Email address"
+                />
+              </div>
+              <div class="mt-0 mb-0" style="max-width: 35rem">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="*Please leave your comments here"
+                ></textarea>
+
+                <a href="#" class="btn mt-4">NEXT STEP &rarr;</a>
               </div>
             </div>
           </div>
