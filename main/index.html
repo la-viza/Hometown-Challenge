@@ -164,31 +164,20 @@
         z-index: 3;
         width: 80%;
         font-family: "Lato", sans-serif !important;
+        font-weight: 300 !important;
         font-size: 1.6rem;
         padding: 1.25rem;
         text-align: center;
         background: rgba(35, 49, 66, 0.9);
-        opacity: 0.5rem;
-        color: #233142;
+
+        color: #ececec;
         font-weight: 400;
         transform: translateY(50%);
       }
-
-      .home__location,
-      .home__rooms {
-        margin-top: 1rem;
+      .erkindik {
+        margin-bottom: 1.5rem;
       }
 
-      .home__location,
-      .home__rooms,
-      .home__area,
-      .home__price {
-        font-size: 1.5rem;
-        margin: 1rem;
-
-        display: flex;
-        align-items: center !important;
-      }
       .sights {
         color: #233142;
         padding: 0 1rem;
@@ -196,11 +185,23 @@
         font-family: "Lato", sans-serif !important;
         font-weight: 300;
       }
-
-      .home__btn {
+      .osh-bazaar {
+        /*width: 120%;
+        transform: scale(0.9);*/
+      }
+      .ala-archa {
+        width: 100%;
+        height: 105%;
+      }
+      /*.home__btn {
         grid-column: 1 / -1;
         margin-top: -1rem;
-      }
+        background: rgba(35, 49, 66, 0.9);
+        color: #ececec;
+        padding: 1rem;
+        font-family: "Lato", sans-serif !important;
+        font-weight: 300 !important;
+      }*/
     </style>
   </head>
 
@@ -282,7 +283,7 @@
             class="home__img"
           />
 
-          <h5 class="home__name">Erkindik Boulevard</h5>
+          <h5 class="home__name erkindik">Erkindik Boulevard</h5>
           <div>
             <p class="sights lead text-center">
               Boulevard Erkindik (formerly a boulevard named after F. E
@@ -291,52 +292,42 @@
               by citizens.
             </p>
           </div>
-
-          <button class="btn home__btn">Contact realtor</button>
         </div>
 
         <div class="home">
-          <img src="#" alt="House 1" class="home__img" />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/571/original/800px-Osh_Bazaar_Bishkek__Kyrgyzstan_%281407198324%29.jpeg?1668061033"
+            alt="Osh Bazaar"
+            class="home__img osh-bazaar"
+          />
 
-          <h5 class="home__name">Beautiful Family House</h5>
-          <div class="home__location">
-            <p class="sights">USA</p>
+          <h5 class="home__name">Osh Bazaar</h5>
+          <div>
+            <p class="sights lead text-center">
+              Osh Bazaar is the place where one can buy fresh food products,
+              almost any common household good, clothes, souvenirs and many
+              other locally produced items relevant to the traditional and
+              modern culture of Kyrgyzstan.
+            </p>
           </div>
-
-          <div class="home__rooms">
-            <p>5 rooms</p>
-          </div>
-
-          <div class="home__area">
-            <p>325 m2</p>
-          </div>
-
-          <div class="home__price">
-            <p>$1,200,000</p>
-          </div>
-          <button class="btn home__btn">Contact realtor</button>
         </div>
 
         <div class="home">
-          <img src="#" alt="House 1" class="home__img" />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/569/original/marek-brzoska-hBytHoXJ6EY-unsplash.jpg?1668059949"
+            alt="Ala-Archa Park"
+            class="home__img ala-archa"
+          />
 
-          <h5 class="home__name">Beautiful Family House</h5>
-          <div class="home__location">
-            <p>USA</p>
+          <h5 class="home__name">Ala-Archa Nature Park</h5>
+          <div>
+            <p class="sights lead text-center">
+              The nature park is named after the river Ala-Archa which flows
+              through it.The park is a destination point for weekend picnickers,
+              hikers, horse trekkers, skiers as well as mountain climbers
+              looking for ice, rock and mixed routes.
+            </p>
           </div>
-
-          <div class="home__rooms">
-            <p>5 rooms</p>
-          </div>
-
-          <div class="home__area">
-            <p>325 m2</p>
-          </div>
-
-          <div class="home__price">
-            <p>$1,200,000</p>
-          </div>
-          <button class="btn home__btn">Contact realtor</button>
         </div>
       </section>
     </main>
