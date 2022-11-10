@@ -174,9 +174,6 @@
         font-weight: 400;
         transform: translateY(50%);
       }
-      .erkindik {
-        margin-bottom: 1.5rem;
-      }
 
       .sights {
         color: #233142;
@@ -185,10 +182,7 @@
         font-family: "Lato", sans-serif !important;
         font-weight: 300;
       }
-      .osh-bazaar {
-        /*width: 120%;
-        transform: scale(0.9);*/
-      }
+
       .ala-archa {
         width: 100%;
         height: 105%;
@@ -202,6 +196,19 @@
         font-family: "Lato", sans-serif !important;
         font-weight: 300 !important;
       }*/
+
+      .card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+      }
+      .book {
+        padding: 7rem;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .card-img-top {
+      }
     </style>
   </head>
 
@@ -275,6 +282,7 @@
         </p>
       </section>
 
+      <h3 class="text-center mt-5 mb-0">SIGHTS</h3>
       <section class="homes">
         <div class="home">
           <img
@@ -286,10 +294,11 @@
           <h5 class="home__name erkindik">Erkindik Boulevard</h5>
           <div>
             <p class="sights lead text-center">
-              Boulevard Erkindik (formerly a boulevard named after F. E
-              Dzerzhinskiy, also known as "Dzerzhinka") is one of the most
-              popular places in Bishkek. The long densely forested street loved
-              by citizens.
+              Boulevard Erkindik (formerly named after F. E Dzerzhinskiy, also
+              known as "Dzerzhinka") is one of the most popular places in
+              Bishkek. The long densely forested street loved by citizens. There
+              are many monuments to political and cultural figures on this
+              street.
             </p>
           </div>
         </div>
@@ -327,6 +336,34 @@
               hikers, horse trekkers, skiers as well as mountain climbers
               looking for ice, rock and mixed routes.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <h3 class="text-center mt-0 mb-5">VISIT</h3>
+
+      <section class="book">
+        <div class="card mb-3" style="max-width: 80rem">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img
+                src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/572/original/800px-Bishkek-capital-of-Kyrgyzstan.jpeg?1668062700"
+                class="card-img-top"
+                alt="Ala-Too Square"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
