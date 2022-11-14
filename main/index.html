@@ -239,7 +239,7 @@
           #232526 100%
         );
         margin: 10px;
-        padding: 0.8rem 1.5rem 0.8rem 2rem;
+        padding: 0.8rem 1.5rem 0.8rem 1.5rem;
         text-align: center;
         text-transform: uppercase;
         transition: 0.3s;
@@ -259,6 +259,10 @@
 
       .btn a {
         color: white;
+      }
+
+      .comment-form {
+        padding: 1rem 1rem 0 1rem;
       }
 
       footer {
@@ -431,12 +435,16 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/572/origina
 
                 <input
                   type="email"
-                  class="form-control mt-5"
+                  class="form-control mt-5 justify-content-center"
                   id="exampleFormControlInput1"
                   placeholder="Email address"
+                  style="max-width: 34rem"
                 />
               </div>
-              <div class="mt-0 mb-0" style="max-width: 35rem">
+              <div
+                class="mt-0 mb-0 justify-content-center comment-form"
+                style="max-width: 36rem"
+              >
                 <textarea
                   class="form-control"
                   id="exampleFormControlTextarea1"
