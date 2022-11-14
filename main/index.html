@@ -164,12 +164,12 @@
         grid-column: 1 / -1;
         z-index: 1;
       }
+
       .sightseeing__name {
         grid-row: 1 / 3;
         grid-column: 1 / -1;
         justify-self: center;
         align-self: end;
-
         z-index: 3;
         width: 80%;
         font-family: "Lato", sans-serif !important;
@@ -178,10 +178,26 @@
         padding: 1.25rem;
         text-align: center;
         background: rgba(35, 49, 66, 0.9);
-
         color: #ececec;
-        font-weight: 400;
         transform: translateY(50%);
+        border-style: none;
+      }
+
+      .sightseeing__name a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 100ms ease-in-out;
+      }
+
+      button {
+        transition: all 0.2s;
+        cursor: pointer;
+      }
+
+      button:hover {
+        opacity: 1;
+        background-color: #233142;
       }
 
       .sights {
@@ -194,7 +210,7 @@
 
       .ala-archa {
         width: 100%;
-        height: 105%;
+        height: 107%;
       }
 
       .card {
@@ -341,8 +357,9 @@
             alt="Erkindik Boulevard"
             class="sightseeing__img"
           />
-
-          <h5 class="sightseeing__name erkindik">Erkindik Boulevard</h5>
+          <button class="sightseeing__name">
+            <a href="#">Erkindik Boulevard</a>
+          </button>
           <div>
             <p class="sights lead text-center">
               Boulevard Erkindik (formerly named after F. E Dzerzhinskiy, also
@@ -361,7 +378,9 @@
             class="sightseeing__img osh-bazaar"
           />
 
-          <h5 class="sightseeing__name">Osh Bazaar</h5>
+          <button class="sightseeing__name">
+            <a href="#">Osh Bazaar</a>
+          </button>
           <div>
             <p class="sights lead text-center">
               Osh Bazaar is the place where one can buy fresh food products,
@@ -379,7 +398,9 @@
             class="sightseeing__img ala-archa"
           />
 
-          <h5 class="sightseeing__name">Ala-Archa Nature Park</h5>
+          <button class="sightseeing__name">
+            <a href="#">Ala-Archa Nature Park</a>
+          </button>
           <div>
             <p class="sights lead text-center">
               The nature park is named after the river Ala-Archa which flows
