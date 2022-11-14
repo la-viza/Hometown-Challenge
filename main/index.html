@@ -281,6 +281,7 @@
 
       /* MEDIA QUERIES: */
 
+      /* tablets: */
       @media (max-width: 915px) {
         .header {
           height: 100vh;
@@ -302,6 +303,65 @@
         }
         .card {
           padding-bottom: 2rem !important;
+        }
+      }
+      /* mobile: */
+      @media (max-width: 450px) {
+        .header {
+          height: 65vh;
+        }
+
+        .frame_outside {
+          margin: 8rem 3rem;
+          padding: 1rem;
+        }
+
+        .frame_inside {
+          padding: 0.4rem;
+          outline-offset: 1rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+          margin-top: 1.3rem;
+        }
+
+        h3 {
+          margin-top: 0.5rem !important;
+          font-size: 1.5rem;
+        }
+
+        p.about {
+          margin-top: 1.5rem !important;
+          font-size: 1rem;
+        }
+
+        .sightseeings {
+          margin: 1.8rem 1rem 1.5rem;
+        }
+
+        .sightseeing__name {
+          font-size: 1.3rem;
+          padding: 1rem;
+        }
+        .sights {
+          font-size: 1rem;
+        }
+
+        .sightseeing__img {
+          height: 105%;
+        }
+
+        .book {
+          padding: 1rem;
+        }
+
+        .btn {
+          width: 40%;
         }
       }
     </style>
@@ -363,7 +423,7 @@
       <section class="section_about">
         <h3 class="text-center mt-5" id="about">ABOUT</h3>
 
-        <p class="lead m-5 text-start">
+        <p class="lead m-5 text-start about">
           Bishkek, formerly Pishpek and Frunze, is the capital and largest city
           of Kyrgyzstan. Bishkek is also the administrative centre of the Chüy
           Region. The region surrounds the city, although the city itself is not
